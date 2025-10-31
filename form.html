@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('img/back.jfif');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        fieldset {
+            background-color: cadetblue;
+        }
+
+        legend {
+            color: aliceblue;
+        }
+
+        textarea {
+            color: blueviolet;
+            text-shadow: 5px 5px 5px purple;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <a href="anasayfa.html">
+            <img src="img/profil.png" style="width: 150px;height: 150px; border-radius: 50%;">
+        </a>
+    </center>
+    <form action="">
+        <fieldset>
+            <legend>kişisel bilgi girişi formu</legend>
+            <label for="fname">adı:</label>
+            <input type="text" id="fname" name="fname" placeholder="adınızı giriniz">
+            <br>
+            <br>
+            <label for="lname">soyadı:</label>
+            <input type="text" id="lname" name="lname" placeholder="soyadınızı giriniz">
+            <br>
+            <br>
+            <label for="gender">cinsiyet:</label>
+            <input type="radio" id="bay" name="c">bay
+            <input type="radio" id="bayan" name="c">bayan
+            <br>
+            <br>
+            <label for="dill">bildiği diller:</label>
+            <select name="sec" id="sec">
+                <option value="secim">dil seç</option>
+                <option value="tr">türkçe</option>
+                <option value="ing">english</option>
+            </select>
+            <br>
+            <br>
+            hobileriniz:
+            <br>
+            <input type="checkbox">spor
+            <input type="checkbox">müzik
+            <br>
+            <input type="checkbox">tiyatro
+            <input type="checkbox">film
+            <br>
+            <br>
+            <textarea name="text" id="text" rows="4" cols="40">
+kişisel bilgilerinizi buraya giriniz
+            </textarea>
+            <center><input type="submit" value="Submit"></center>
+        </fieldset>
+    </form>
+</body>
+
+</html>
